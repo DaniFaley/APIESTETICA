@@ -24,6 +24,9 @@ app.use('/api/servicio', servicioRoutes_1.default);
 app.use('/api/usuario', usuarioRoutes_1.default);
 app.use('/api/corte', corteRoutes_1.default);
 app.use('/api/auth', authRoutes_1.default);
+app.get('/', (req, res) => {
+    res.send('API funcionando 🚀');
+});
 // Iniciar el servidor
 app.listen(config_1.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${config_1.PORT}`);
