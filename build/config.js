@@ -13,3 +13,4 @@ exports.DB_USER = process.env.DB_USER || 'root';
 exports.DB_PASSWORD = process.env.DB_PASSWORD || '';
 exports.DB_NAME = process.env.DB_NAME || 'proyecto_estetica';
 exports.DB_PORT = Number(process.env.DB_PORT) || 3306;
+// console.log('Base de datos:', DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT);

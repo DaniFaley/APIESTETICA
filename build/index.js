@@ -11,6 +11,8 @@ const servicioRoutes_1 = __importDefault(require("./routes/Servicio/servicioRout
 const usuarioRoutes_1 = __importDefault(require("./routes/Usuario/usuarioRoutes"));
 const corteRoutes_1 = __importDefault(require("./routes/Corte/corteRoutes"));
 const authRoutes_1 = __importDefault(require("./routes/Auth/authRoutes"));
+const rolRoutes_1 = __importDefault(require("./routes/Rol/rolRoutes"));
+const rol_usuarioRoutes_1 = __importDefault(require("./routes/RolUsuario/rol_usuarioRoutes"));
 // Importar configuración de variables de entorno
 const config_1 = require("./config");
 // Crear la aplicación con Express
@@ -24,6 +26,8 @@ app.use('/api/servicio', servicioRoutes_1.default);
 app.use('/api/usuario', usuarioRoutes_1.default);
 app.use('/api/corte', corteRoutes_1.default);
 app.use('/api/auth', authRoutes_1.default);
+app.use('/api/rol', rolRoutes_1.default);
+app.use('/api/rol_usuario', rol_usuarioRoutes_1.default);
 // Iniciar el servidor
 app.listen(config_1.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${config_1.PORT}`);
