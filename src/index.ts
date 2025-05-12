@@ -6,6 +6,8 @@ import servicioRoutes from './routes/Servicio/servicioRoutes';
 import usuarioRoutes from './routes/Usuario/usuarioRoutes';
 import corteRoutes from './routes/Corte/corteRoutes';
 import authRoutes from './routes/Auth/authRoutes';
+import rolRoutes from './routes/Rol/rolRoutes';
+import rol_usuarioRoutes from './routes/RolUsuario/rol_usuarioRoutes';
 
 // Importar configuración de variables de entorno
 import { PORT } from './config';
@@ -23,6 +25,8 @@ app.use('/api/servicio', servicioRoutes);
 app.use('/api/usuario', usuarioRoutes);
 app.use('/api/corte', corteRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/rol', rolRoutes);
+app.use('/api/rol_usuario', rol_usuarioRoutes);
 
 // Iniciar el servidor
 app.listen(PORT, () => {
